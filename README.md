@@ -37,7 +37,7 @@ Provide a automated release management  of java web application using Jenkins vi
 
 The basic code is located on [https://github.com/kostkzn/aws-codestar-tomcatweb](https://github.com/kostkzn/aws-codestar-tomcatweb)
 
-The code also contains testing instructions and ansible playbook for app deploying to Tomcat
+The code also contains java testing instructions, ansible [playbook](https://github.com/kostkzn/aws-codestar-tomcatweb/tree/main/ansible) for app deploying to Tomcat and [Jenkinsfile](https://github.com/kostkzn/aws-codestar-tomcatweb/blob/main/Jenkinsfile) for pipeline building
 
 Another ansible playbook for configuration of cloud stack located [here](/ansible_inits/). The playbook isn't yet pumped to full automation but is really helps for quick setup of Tomcat and Docker environment
 
