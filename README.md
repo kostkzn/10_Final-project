@@ -28,6 +28,7 @@ Provide a automated release management  of java web application using Jenkins vi
 - Git – version control system
 - Jenkins – continuous integration server
 - Maven – build tool for java applications
+- Docker – virtualization service to deliver software in packages
 - NEXUS – artifact repository with a cache of necessary dependencies on it
 - Ansible – configuration for hosts stack and for job of delivery application to server
 - Tomcat – server/webcontainer for java applications
