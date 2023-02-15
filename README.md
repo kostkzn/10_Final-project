@@ -16,12 +16,12 @@ Provide a automated release management  of java web application using Jenkins vi
 
 - Configure CI pipeline on Jenkins host Container with Remote API
 - Build [Jenkins agent Docker image](https://hub.docker.com/repository/docker/kostkzn/jenkins-agent-maven-jdk11/general) & integrate with Jenkins host
-- Configure additional agent host with Ansible tool to Deploy application to Tomcat servlet 
+- Configure additional agent host with Ansible tool to Deploy application to Tomcat servlet
 - Configure AWS hosts for migration to cloud setup
 
 ## Design
 
-![The setup structure](Images/01.jpg)
+![The setup structure](images/01.jpg)
 
 - Git – version control system
 - Jenkins – continuous integration server
@@ -45,37 +45,37 @@ Another ansible playbook for configuration of cloud stack located [here](/ansibl
 
 Hosts stack on AWS
 
-![Hosts stack on AWS](Images/02.jpg)
+![Hosts stack on AWS](images/02.jpg)
 
 Initial page of Tomcat after installing
 
-![Initial page of Tomcat](Images/03.jpg)
+![Initial page of Tomcat](images/03.jpg)
 
 Jenkins pipeline
 
-![Jenkins pipeline](Images/04.jpg)
+![Jenkins pipeline](images/04.jpg)
 
 First application deploy
 
-![First deploy](Images/05.jpg)
+![First deploy](images/05.jpg)
 
 Some visual code changes triggers a second pipeline iteration
 
-![Some code editions](Images/06.jpg)
+![Some code editions](images/06.jpg)
 
-![Second pipeline iteration](Images/07.jpg)
+![Second pipeline iteration](images/07.jpg)
 
 New results
 
-![Second deploy](Images/08.jpg)
+![Second deploy](images/08.jpg)
 
 Saved artifacts on NEXUS repository
 
-![Saved artifacts on repository](Images/09.jpg)
+![Saved artifacts on repository](images/09.jpg)
 
 Cashed dependencies
 
-![Cashed dependencies](Images/10.jpg)
+![Cashed dependencies](images/10.jpg)
 
 ## Conclusions
 
