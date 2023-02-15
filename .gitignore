@@ -1,0 +1,6 @@
+# temp working dir
+workshop/
+
+
+# SSH Keys
+*.pem

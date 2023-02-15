@@ -1,0 +1,6 @@
+---
+- import_playbook: init-docker.yml
+- import_playbook: init-tomcat9.yml
+- import_playbook: init-agent.yml 
+
+####

@@ -1,0 +1,14 @@
+---
+- name: Docker initiation for jenkins agent hosts
+  hosts: agents
+  become: True 
+  vars:
+    docker_user: ubuntu
+  tasks:
+    - block:    
+      - name: Start alpine/socat
+        shell: docker run -d --name socat --restart=always -p 2375:2375 -v /var/run/docker.sock:/var/run/docker.sock alpine/socat tcp-listen:2375,fork,reuseaddr unix-connect:/var/run/docker.sock
+      rescue:
+      - name: Warning msg
+        debug:
+          msg: "Maybe SOCAT works well. Read the warning" 
