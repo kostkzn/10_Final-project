@@ -1,3 +1,5 @@
+#!/bin/bash
+cat << _EOF_ > /home/ubuntu/ansible/init-docker.yml
 ---
 - name: Setup docker for host groups -- tool and agents
   hosts: docker
@@ -67,3 +69,5 @@
     - name: Install AWSCLI
       pip:
         name: awscli
+
+_EOF_

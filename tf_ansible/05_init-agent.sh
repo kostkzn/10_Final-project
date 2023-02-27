@@ -1,4 +1,7 @@
----
+#!/bin/bash
+
+cat << _EOF_ > /home/ubuntu/ansible/init-agent.yml
+---        
 - name: Docker install for Agent of Jenkins via Socat
   hosts: agents
   become: True 
@@ -31,3 +34,6 @@
     - name: (4/4) Alpine/Socat -- Checking Running Status 
       debug:
         var: socat_run.container.State.Status
+
+_EOF_
+

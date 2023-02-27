@@ -1,3 +1,6 @@
+#!/bin/bash
+
+cat << _EOF_ > /home/ubuntu/ansible/init-tomcat9.yml
 ---
 - name: Setup Tomcat9
   hosts: webservers
@@ -21,4 +24,4 @@
       service:
         name: tomcat9
         state: started
-
+_EOF_
